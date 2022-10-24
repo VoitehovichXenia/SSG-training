@@ -16,7 +16,7 @@ const Socials: FC<SocialsProps> = ({ socials }) => {
     <ul className={styles.socials}>
       {socials && socials.map(({ id, path, icon }) => (
         <li key={id}>
-          <a href={path} target="_blank" rel="noreffer noopener">
+          <a href={path} target="_blank" rel="noreferrer noopener">
             <i className={`fab fa-${icon}`} aria-hidden={true}/>
           </a>
         </li>
